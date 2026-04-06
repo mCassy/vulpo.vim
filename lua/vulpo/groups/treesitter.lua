@@ -172,6 +172,17 @@ function M.get(p, opts, fg)
     ["@function.php"] = { fg = p.fg_gutter, bold = config.get_bold("functions") },
     ["@method.php"] = { fg = p.fg_gutter, bold = config.get_bold("functions") },
 
+    -- PHPDoc
+    ["@comment.documentation.php"] = { fg = p.gray, italic = config.get_italic("comments") },
+    ["@keyword.phpdoc"] = { fg = p.teal },
+    ["@keyword.return.phpdoc"] = { fg = p.teal },
+    ["@type.phpdoc"] = { fg = p.fg_gutter },
+    ["@variable.parameter.phpdoc"] = { fg = p.orange },
+    ["@parameter.phpdoc"] = { fg = p.orange },
+    ["@attribute.phpdoc"] = { fg = p.teal },
+    ["@tag.phpdoc"] = { fg = p.teal },
+    ["@text.phpdoc"] = { fg = p.gray },
+
     -- SQL
     ["@keyword.sql"] = { fg = p.orange },
     ["@type.sql"] = { fg = p.teal },
