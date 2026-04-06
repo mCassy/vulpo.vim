@@ -78,27 +78,61 @@ function M.get(p, opts, fg)
     NeoTreeDirectoryIcon = { fg = p.teal },
     NeoTreeFileName = { fg = fg },
     NeoTreeFileIcon = { fg = fg },
+    NeoTreeFileNameOpened = { fg = fg, bold = true },
     NeoTreeIndentMarker = { fg = p.indent_guide },
     NeoTreeExpander = { fg = p.gray },
+    NeoTreeSymbolicLinkTarget = { fg = p.purple },
+    NeoTreeModified = { fg = p.git_change },
+    NeoTreeDimText = { fg = p.gray },
+    NeoTreeFilterTerm = { fg = p.orange, bold = true },
+    NeoTreeMessage = { fg = p.gray, italic = true },
+    NeoTreeDotfile = { fg = p.gray },
+    NeoTreeHiddenByName = { fg = p.gray },
+    NeoTreeWindowsHidden = { fg = p.gray },
+    NeoTreeCursorLine = { bg = p.bg_visual },
+    NeoTreeWinSeparator = { fg = dark_bg, bg = dark_bg },
+    NeoTreeStatusLine = { fg = fg, bg = dark_bg },
+    NeoTreeStatusLineNC = { fg = p.gray, bg = dark_bg },
+    NeoTreeVertSplit = { fg = dark_bg, bg = dark_bg },
+    NeoTreeEndOfBuffer = { fg = dark_bg },
+    NeoTreeSignColumn = { fg = fg, bg = dark_bg },
+
+    -- Neo-tree git status
     NeoTreeGitAdded = { fg = p.git_add },
-    NeoTreeGitConflict = { fg = p.red },
+    NeoTreeGitConflict = { fg = p.red, bold = true },
     NeoTreeGitDeleted = { fg = p.git_delete },
     NeoTreeGitIgnored = { fg = p.gray },
     NeoTreeGitModified = { fg = p.git_change },
     NeoTreeGitUnstaged = { fg = p.git_change },
     NeoTreeGitUntracked = { fg = p.git_add },
     NeoTreeGitStaged = { fg = p.green },
-    NeoTreeSymbolicLinkTarget = { fg = p.purple },
-    NeoTreeModified = { fg = p.git_change },
-    NeoTreeDimText = { fg = p.gray },
-    NeoTreeFilterTerm = { fg = p.orange, bold = true },
+    NeoTreeGitRenamed = { fg = p.purple },
+
+    -- Neo-tree tabs
     NeoTreeTabActive = { fg = p.fg_gutter, bg = p.gray, bold = true },
     NeoTreeTabInactive = { fg = p.gray, bg = dark_bg },
     NeoTreeTabSeparatorActive = { fg = p.green, bg = p.gray },
     NeoTreeTabSeparatorInactive = { fg = dark_bg, bg = dark_bg },
+
+    -- Neo-tree float
     NeoTreeFloatBorder = { fg = p.border, bg = float_bg },
     NeoTreeFloatTitle = { fg = p.teal, bg = float_bg, bold = true },
+    NeoTreeFloatNormal = { fg = fg, bg = float_bg },
     NeoTreeTitleBar = { fg = p.teal, bg = float_bg, bold = true },
+
+    -- Neo-tree preview
+    NeoTreePreview = { fg = fg, bg = float_bg },
+
+    -- Neo-tree git status (detailed for git_status source)
+    NeoTreeGitStatusAdded = { fg = p.git_add },
+    NeoTreeGitStatusDeleted = { fg = p.git_delete },
+    NeoTreeGitStatusModified = { fg = p.git_change },
+    NeoTreeGitStatusRenamed = { fg = p.purple },
+    NeoTreeGitStatusConflict = { fg = p.red, bold = true },
+    NeoTreeGitStatusUntracked = { fg = p.git_add },
+    NeoTreeGitStatusIgnored = { fg = p.gray },
+    NeoTreeGitStatusStaged = { fg = p.green },
+    NeoTreeGitStatusUnstaged = { fg = p.git_change },
 
     -- ============================================
     -- GitSigns
