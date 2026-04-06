@@ -44,7 +44,7 @@ local M = {
 
   -- Git/Diff
   git_add = "#5f875f",
-  git_change = "#af87d7",
+  git_change = "#87875f",
   git_delete = "#d75f5f",
   diff_add_bg = "#262626",
   diff_delete_bg = "#303030",
