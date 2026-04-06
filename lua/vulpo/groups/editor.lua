@@ -112,9 +112,10 @@ function M.get(p, opts, fg)
 
     -- Misc UI
     Title = { fg = p.teal, underline = true },
-    SpecialKey = { fg = p.teal, bold = true },
-    NonText = { fg = p.teal, bg = transparent and p.none or p.bg_dark, bold = true },
-    EndOfBuffer = { fg = p.teal, bg = transparent and p.none or p.bg_dark },
+    SpecialKey = { fg = p.gray_dark },
+    NonText = { fg = p.gray_dark, bg = transparent and p.none or p.bg },
+    Whitespace = { fg = p.bg_light },
+    EndOfBuffer = { fg = p.bg_medium, bg = transparent and p.none or p.bg },
     Conceal = { fg = p.olive, bg = transparent and p.none or p.gray_dark },
     Directory = { fg = p.teal_light, bold = true },
     QuickFixLine = { bg = transparent and p.none or p.bg_light, bold = true },
