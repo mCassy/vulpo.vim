@@ -264,7 +264,7 @@ function M.get(p, opts, fg)
     LazyProgressTodo = { fg = p.gray },
     LazyProp = { fg = p.fg_gutter },
     LazyReasonCmd = { fg = p.orange },
-    LazyReasonEvent = { fg = p.purple },
+    LazyReasonEvent = { fg = p.teal_light },
     LazyReasonFt = { fg = p.teal },
     LazyReasonImport = { fg = p.fg_gutter },
     LazyReasonKeys = { fg = p.green },
